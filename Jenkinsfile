@@ -12,7 +12,7 @@ pipeline {
         stage('downloading') {
           steps {
             echo 'ok'
-            sh 'curl -X GET "test.com" -v'
+            sh 'echo "test"'
           }
         }
 
