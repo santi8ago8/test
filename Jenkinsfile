@@ -1,5 +1,5 @@
 pipeline {
-  agent none
+  agent { docker { image 'node:6.3' } }
   stages {
     stage('File Download') {
       parallel {
